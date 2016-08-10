@@ -3,6 +3,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.1.2/css/bulma.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <section class="hero is-primary is-small">
@@ -10,17 +11,19 @@
         <div class="container">
           <nav class="nav">
             <div class="nav-left">
-              <svg width="110px" height="46px" viewBox="0 0 245 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <title>worona</title>
-                  <defs></defs>
-                  <g id="poppins" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-size="64" font-family="Poppins-SemiBold, Poppins" font-weight="500">
-                      <g id="Artboard-1" transform="translate(-5.000000, -56.000000)" fill="#FFFFFF">
-                          <text id="worona">
-                              <tspan x="5" y="92">worona</tspan>
-                          </text>
-                      </g>
-                  </g>
-              </svg>
+              <span class="nav-item is-brand">
+                <svg width="110px" height="46px" viewBox="0 0 245 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <title>worona</title>
+                    <defs></defs>
+                    <g id="poppins" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-size="64" font-family="Poppins-SemiBold, Poppins" font-weight="500">
+                        <g id="Artboard-1" transform="translate(-5.000000, -56.000000)" fill="#FFFFFF">
+                            <text id="worona">
+                                <tspan x="5" y="92">worona</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </svg>
+              </span>
             </div>
 
             <span class="nav-toggle is-right">
@@ -79,19 +82,19 @@
               <li class="is-active">
                 <a href="#">
                   <span class="icon"><i class="fa fa-mobile"></i></span>
-                  <span>Native & Web App</span>
+                  <span class="is-hidden-mobile">Native & Web App</span>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <span class="icon is-small"><i class="fa fa-facebook"></i></span>
-                  <span>Instant Articles</span>
+                  <span class="icon"><i class="fa fa-facebook"></i></span>
+                  <span class="is-hidden-mobile">Instant Articles</span>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <span class="icon is-small"><i class="fa fa-google"></i></span>
-                  <span>AMP</span>
+                  <span class="icon"><i class="fa fa-google"></i></span>
+                  <span class="is-hidden-mobile">AMP</span>
                 </a>
               </li>
             </ul>
@@ -114,35 +117,33 @@
         <div class="column is-narrow">
           <aside class="menu">
             <p class="menu-label">
-              General
+              Settings
             </p>
             <ul class="menu-list">
-              <li><a href="#">Dashboard</a></li>
-              <li><a href="#">Customers</a></li>
+              <li><a href="#">General</a></li>
+              <li><a href="#">Native App</a></li>
+              <li><a href="#">Web App</a></li>
             </ul>
             <p class="menu-label">
-              Administration
+              Appereance
             </p>
             <ul class="menu-list">
-              <li><a href="#">Team Settings</a></li>
-              <li>
-                <a class="is-active" href="#">Manage Your Team</a>
-                <ul>
-                  <li><a href="#">Members</a></li>
-                  <li><a href="#">Plugins</a></li>
-                  <li><a href="#">Add a member</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Invitations</a></li>
-              <li><a href="#">Authentication</a></li>
+              <li><a href="#">Customize</a></li>
+              <li><a href="#">Themes</a></li>
             </ul>
             <p class="menu-label">
-              Transactions
+              Extensions
             </p>
             <ul class="menu-list">
-              <li><a href="#">Payments</a></li>
-              <li><a href="#">Transfers</a></li>
-              <li><a href="#">Balance</a></li>
+              <li><a href="#">Add new</a></li>
+              <li><a href="#">Extension 1</a></li>
+              <li><a href="#">Extension 2</a></li>
+            </ul>
+            <p class="menu-label">
+              Publish
+            </p>
+            <ul class="menu-list">
+              <li><a href="#">Publish</a></li>
             </ul>
           </aside>
         </div>
