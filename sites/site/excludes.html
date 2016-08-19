@@ -137,7 +137,7 @@
       <nav class="is-mobile">
         <a class="menu-label" href="../sites.html">Sites ></a>
         <a class="menu-label is-disabled" href="./site.html">Govoid ></a>
-        <a class="menu-label" href="./site.html"><strong>Settings (General)</strong></a>
+        <a class="menu-label" href="./site.html"><strong>Settings (Excludes)</strong></a>
       </nav>
       <br>
       <div class="columns is-mobile">
@@ -147,8 +147,8 @@
               Settings
             </p>
             <ul class="menu-list">
-              <li><a class="is-active" href="#">General</a></li>
-              <li><a href="./excludes.html">Excludes</a></li>
+              <li><a href="./site.html">General</a></li>
+              <li><a class="is-active" href="#">Excludes</a></li>
             </ul>
             <p class="menu-label">
               Appereance
@@ -174,59 +174,81 @@
           </aside>
         </div>
         <div class="column is-12-tablet is-6-desktop">
+          <article class="message is-warning">
+            <div class="message-body">
+              <p>
+                Don't include any URL here if you are not sure what is this for.
+              </p>
+            </div>
+          </article>
           <div class="content">
-            <h3>
-              Categories & tag names
-            </h3>
-            <h5>Categories name</h5>
+            <h3>URLs</h3>
             <div class="control is-grouped">
-              <p class="control is-expanded has-icon has-icon-right">
-                <input class="input" type="text" placeholder="category name">
+              <p class="control is-expanded">
+                <input class="input" type="text" placeholder="URL to ignore" value="http://www.govoid.es/contact">
               </p>
               <p class="control">
                 <a class="button">
-                  <span class="is-hidden-mobile">Change</span>
+                  <span class="is-hidden-mobile">Preview</span>
                   <span class="is-hidden-tablet">
-                    <i class="fa fa-wrench"></i>
+                    <i class="fa fa-eye"></i>
+                  </span>
+                </a>
+                <a class="button is-danger">
+                  <span class="is-hidden-mobile">
+                    Remove
+                  </span>
+                  <span class="is-hidden-tablet">
+                    <i class="fa fa-trash-o"></i>
                   </span>
                 </a>
               </p>
             </div>
-            <br>
-            <h5>Tag name</h5>
             <div class="control is-grouped">
               <p class="control is-expanded has-icon has-icon-right">
-                <input class="input" type="text" placeholder="tag name">
+                <input class="input is-success" type="text" placeholder="URL to ignore" value="http://www.govoid.es/support">
+                <i class="fa fa-check"></i>
+                <span class="help is-success">The URL will be ignored</span>
               </p>
               <p class="control">
                 <a class="button">
-                  <span class="is-hidden-mobile">Change</span>
+                  <span class="is-hidden-mobile">Preview</span>
                   <span class="is-hidden-tablet">
-                    <i class="fa fa-wrench"></i>
+                    <i class="fa fa-eye"></i>
+                  </span>
+                </a>
+                <a class="button is-danger">
+                  <span class="is-hidden-mobile">
+                    Remove
+                  </span>
+                  <span class="is-hidden-tablet">
+                    <i class="fa fa-trash-o"></i>
                   </span>
                 </a>
               </p>
             </div>
-            <hr>
-            <h3>
-              Web App
-            </h3>
-            <h5>Serve the Web App when accessed from mobile browsers?</h5>
+            <div class="control is-grouped">
+              <p class="control is-expanded has-icon has-icon-right">
+                <input class="input is-danger" type="text" placeholder="URL to ignore" value="http://www.google.es">
+                <i class="fa fa-warning"></i>
+                <span class="help is-danger">The URL is not valid</span>
+              </p>
+              <p class="control">
+                <a class="button is-danger">
+                  <span class="is-hidden-mobile">
+                    Remove
+                  </span>
+                  <span class="is-hidden-tablet">
+                    <i class="fa fa-trash-o"></i>
+                  </span>
+                </a>
+              </p>
+            </div>
             <p class="control">
-              <label class="radio">
-                <input type="radio" name="question" checked="">
-                Yes
-              </label>
-              <label class="radio">
-                <input type="radio" name="question">
-                No
-              </label>
+              <input class="input" type="text" placeholder="URL to ignore">
             </p>
             <p class="control">
-              <label class="checkbox">
-                <input type="checkbox" checked>
-                Tablets?
-              </label>
+              <button class="button">Add more</button>
             </p>
           </div>
         </div>
@@ -300,7 +322,6 @@
               </foreignObject>
           </svg>
         </div>
-      </div>
     </section>
     <footer class="footer">
       <div class="container">
