@@ -2,6 +2,7 @@
   <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.1.2/css/bulma.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../addons.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
@@ -32,7 +33,7 @@
 
             <div class="nav-right nav-menu">
               <span class="nav-item">
-                <a class="button is-primary is-active" href="#">
+                <a class="button is-primary" href="./sites.html">
                   <span class="icon is-small">
                     <i class="fa fa-th" aria-hidden="true"></i>
                   </span>
@@ -48,7 +49,7 @@
                 </a>
               </span>
               <span class="nav-item">
-                <a class="button is-primary" href="./settings.html">
+                <a class="button is-primary is-active" href="#">
                   <span class="icon is-small">
                     <i class="fa fa-cogs"></i>
                   </span>
@@ -72,10 +73,10 @@
           <div class="columns is-vcentered">
             <div class="column">
               <p class="title">
-                Sites
+                Settings
               </p>
               <p class="subtitle">
-                Manage your <strong>WordPress Sites</strong> or add new ones.
+                Manage your <strong>account settings</strong>.
               </p>
             </div>
           </div>
@@ -83,39 +84,87 @@
       </div>
       <div class="hero-foot">
         <div class="container">
-          <nav class="tabs is-right is-boxed">
+          <div class="tabs is-boxed">
             <ul>
-              <li class="is-disabled">
+              <li>
+                <a href="./settings.html">
+                  <span class="icon"><i class="fa fa-user"></i></span>
+                  <span class="is-hidden-mobile">Personal details</span>
+                </a>
+              </li>
+              <li>
+                <a href="./settings-password.html">
+                  <span class="icon"><i class="fa fa-lock"></i></span>
+                  <span class="is-hidden-mobile">Password</span>
+                </a>
+              </li>
+              <li class="is-active">
                 <a href="#">
-                  <span> &nbsp;</span>
+                  <span class="icon"><i class="fa fa-envelope"></i></span>
+                  <span class="is-hidden-mobile">Email</span>
                 </a>
               </li>
             </ul>
-          </nav>
+          </div>
         </div>
       </div>
     </section>
-    <nav class="nav has-shadow">
-      <div class="nav-left">
-        <span class="nav-item">
-          <a class="button is-primary" href="./add-site.html">
-            <span class="icon">
-              <i class="fa fa-plus-circle"></i>
-            </span>
-            <span>Add Site</span>
-          </a>
-        </span>
-      </div>
-    </nav>
-    <section class="section is-medium">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <h1 class="title">
-            No sites found
-          </h1>
-          <h2 class="subtitle">
-            <a style="text-decoration: underline;" href="./add-site.html">Add a WordPress site</a> to start using Worona
-          </h2>
+    <section class="section">
+      <div class="container">
+        <div class="colums">
+          <div class="column is-half is-offset-one-quarter">
+            <label class="label">Current email</label>
+            <p class="control">
+              <input class="input is-large is-disabled" type="text" value="matt@automattic.com">
+            </p>
+            <label class="label">New email</label>
+            <p class="control">
+              <input class="input is-large" type="text" placeholder="new@email.com">
+            </p>
+            <label class="label">Confirm new email</label>
+            <p class="control">
+              <input class="input is-large" type="text" placeholder="new@email.com">
+            </p>
+            <p class="control">
+              <div class="level is-mobile">
+                <div class="level-left">
+                  <button class="button is-primary is-medium">
+                    <span><strong>Save</strong></span></button>
+                </div>
+              </div>
+            </p>
+            <hr>
+            <div class="content">
+              <h3>Emails</h3>
+            </div>
+            <p class="control">
+              <label class="checkbox">
+                <input type="checkbox" checked>
+                I want to be informed everytime this account purchases a new extension or theme.
+              </label>
+            </p>
+            <p class="control">
+              <label class="checkbox">
+                <input type="checkbox" checked>
+                I want to be informed everytime Worona releases new services, extensions or themes.
+              </label>
+            </p>
+            <p class="control">
+              <label class="checkbox">
+                <input type="checkbox" checked>
+                I want to be informed with the latest WordPress and Mobile news.
+              </label>
+            </p>
+            <p class="control">
+              <div class="level is-mobile">
+                <div class="level-left">
+                  <button class="button">
+                    <span>Save</span>
+                  </button>
+                </div>
+              </div>
+            </p>
+          </div>
         </div>
       </div>
     </section>
