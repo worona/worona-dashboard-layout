@@ -3,6 +3,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.1.2/css/bulma.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <script src="../jscolor.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
@@ -137,7 +138,7 @@
       <nav class="is-mobile">
         <a class="menu-label" href="../sites.html">Sites ></a>
         <a class="menu-label is-disabled" href="./site.html">Govoid ></a>
-        <a class="menu-label" href="./site.html"><strong>Starter Theme</strong></a>
+        <a class="menu-label" href="./site.html"><strong>Starter Theme</strong> (General)</a>
       </nav>
       <br>
       <div class="columns is-mobile">
@@ -155,7 +156,13 @@
             </p>
             <ul class="menu-list">
               <li><a href="./change-theme.html">Change theme</a></li>
-              <li><a class="is-active" href="#">Starter theme</a></li>
+              <li>
+                <a class="is-disabled" href="#">Starter theme</a>
+                <ul>
+                  <li><a class="is-active" href="#">General</a></li>
+                  <li><a href="./starter-theme-menu.html">Lateral menu</a></li>
+                </ul>
+              </li>
             </ul>
             <p class="menu-label">
               Extensions
@@ -174,7 +181,46 @@
           </aside>
         </div>
         <div class="column is-12-tablet is-6-desktop">
+          <p class="control">
+            <label class="label">Title</label>
+            <p class="control">
+              <input class="input" type="text" placeholder="Title">
+            </p>
 
+            <label class="label">Color</label>
+            <p class="control">
+                <input class="jscolor" value="ab2567">
+            </p>
+
+            <label class="label">Featured Image</label>
+            <p class="control">
+              <label class="radio">
+                <input type="radio" name="featured" checked="">
+                Yes
+              </label>
+              <label class="radio">
+                <input type="radio" name="featured">
+                No
+              </label>
+            </p>
+
+            <label class="label">Number of preloaded posts</label>
+            <p class="control">
+              <label class="radio">
+                <input type="radio" name="posts">
+                5
+              </label>
+              <label class="radio">
+                <input type="radio" name="posts" checked>
+                10
+              </label>
+              <label class="radio">
+                <input type="radio" name="posts">
+                20
+              </label>
+            </p>
+
+          </p>
         </div>
         <div class="is-hidden-mobile column is-4-desktop is-3-tablet has-text-centered">
           <svg width="250px" height="505px" viewBox="0 0 250 505" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

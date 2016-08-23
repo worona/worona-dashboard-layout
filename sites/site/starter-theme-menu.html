@@ -3,6 +3,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.1.2/css/bulma.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <script src="../jscolor.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
@@ -137,7 +138,7 @@
       <nav class="is-mobile">
         <a class="menu-label" href="../sites.html">Sites ></a>
         <a class="menu-label is-disabled" href="./site.html">Govoid ></a>
-        <a class="menu-label" href="./site.html"><strong>Settings (Excludes)</strong></a>
+        <a class="menu-label" href="./site.html"><strong>Starter Theme</strong> (Lateral Menu)</a>
       </nav>
       <br>
       <div class="columns is-mobile">
@@ -148,14 +149,20 @@
             </p>
             <ul class="menu-list">
               <li><a href="./site.html">General</a></li>
-              <li><a class="is-active" href="#">Excludes</a></li>
+              <li><a href="./excludes.html">Excludes</a></li>
             </ul>
             <p class="menu-label">
               Appereance
             </p>
             <ul class="menu-list">
               <li><a href="./change-theme.html">Change theme</a></li>
-              <li><a href="./starter-theme.html">Starter theme</a></li>
+              <li>
+                <a class="is-disabled" href="#">Starter theme</a>
+                <ul>
+                  <li><a href="./starter-theme.html">General</a></li>
+                  <li><a class="is-active" href="#">Lateral menu</a></li>
+                </ul>
+              </li>
             </ul>
             <p class="menu-label">
               Extensions
@@ -174,18 +181,16 @@
           </aside>
         </div>
         <div class="column is-12-tablet is-6-desktop">
-          <article class="message is-warning">
-            <div class="message-body">
-              <p>
-                Don't include any URL here if you are not sure what is this for.
-              </p>
-            </div>
-          </article>
           <div class="content">
-            <h3>URLs</h3>
+            <h3>Custom Links</h3>
+          </div>
+          <div class="control is-horizontal is-grouped">
             <div class="control is-grouped">
               <p class="control is-expanded">
-                <input class="input" type="text" placeholder="URL to ignore" value="http://www.govoid.es/contact">
+                <input class="input" type="text" placeholder="Title" value="Support">
+              </p>
+              <p class="control is-expanded">
+                <input class="input" type="text" placeholder="URL" value="http://www.govoid.es/support">
               </p>
               <p class="control">
                 <a class="button">
@@ -204,53 +209,63 @@
                 </a>
               </p>
             </div>
-            <div class="control is-grouped">
-              <p class="control is-expanded has-icon has-icon-right">
-                <input class="input is-success" type="text" placeholder="URL to ignore" value="http://www.govoid.es/support">
-                <i class="fa fa-check"></i>
-                <span class="help is-success">The URL will be ignored</span>
-              </p>
-              <p class="control">
-                <a class="button">
-                  <span class="is-hidden-mobile">Preview</span>
-                  <span class="is-hidden-tablet">
-                    <i class="fa fa-eye"></i>
-                  </span>
-                </a>
-                <a class="button is-danger">
-                  <span class="is-hidden-mobile">
-                    Remove
-                  </span>
-                  <span class="is-hidden-tablet">
-                    <i class="fa fa-trash-o"></i>
-                  </span>
-                </a>
-              </p>
-            </div>
-            <div class="control is-grouped">
-              <p class="control is-expanded has-icon has-icon-right">
-                <input class="input is-danger" type="text" placeholder="URL to ignore" value="http://www.google.es">
-                <i class="fa fa-warning"></i>
-                <span class="help is-danger">The URL is not valid</span>
-              </p>
-              <p class="control">
-                <a class="button is-danger">
-                  <span class="is-hidden-mobile">
-                    Remove
-                  </span>
-                  <span class="is-hidden-tablet">
-                    <i class="fa fa-trash-o"></i>
-                  </span>
-                </a>
-              </p>
-            </div>
-            <p class="control">
-              <input class="input" type="text" placeholder="URL to ignore">
-            </p>
-            <p class="control">
-              <button class="button">Add more</button>
-            </p>
           </div>
+          <div class="control is-horizontal is-grouped">
+            <div class="control is-grouped">
+              <p class="control is-expanded">
+                <input class="input" type="text" placeholder="Label">
+              </p>
+              <p class="control is-expanded">
+                <input class="input" type="text" placeholder="URL" >
+              </p>
+              <p class="control">
+                <a class="button is-disabled">
+                  <span class="is-hidden-mobile">Preview</span>
+                  <span class="is-hidden-tablet">
+                    <i class="fa fa-eye"></i>
+                  </span>
+                </a>
+                <a class="button is-danger is-disabled">
+                  <span class="is-hidden-mobile">
+                    Remove
+                  </span>
+                  <span class="is-hidden-tablet">
+                    <i class="fa fa-trash-o"></i>
+                  </span>
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <p class="control">
+            <button class="button">Add more</button>
+          </p>
+          <hr>
+          <div class="content">
+            <h3>Categories & Tags</h3>
+          </div>
+          <label class="label">Display categories?</label>
+          <p class="control">
+            <label class="radio">
+              <input type="radio" name="cat" checked="">
+              Yes
+            </label>
+            <label class="radio">
+              <input type="radio" name="cat">
+              No
+            </label>
+          </p>
+          <label class="label">Display tags?</label>
+          <p class="control">
+            <label class="radio">
+              <input type="radio" name="tag" checked="">
+              Yes
+            </label>
+            <label class="radio">
+              <input type="radio" name="tag">
+              No
+            </label>
+          </p>
         </div>
         <div class="is-hidden-mobile column is-4-desktop is-3-tablet has-text-centered">
           <svg width="250px" height="505px" viewBox="0 0 250 505" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -322,6 +337,7 @@
               </foreignObject>
           </svg>
         </div>
+      </div>
     </section>
     <footer class="footer">
       <div class="container">
