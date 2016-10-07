@@ -1,0 +1,186 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.1.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../addons.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script   src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section class="hero is-primary">
+      <div class="hero-head">
+        <div class="container">
+          <nav class="nav">
+            <div class="nav-left">
+              <span class="nav-item is-brand">
+                <svg width="110px" height="46px" viewBox="0 0 245 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <title>worona</title>
+                    <defs></defs>
+                    <g id="poppins" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-size="64" font-family="Poppins-SemiBold, Poppins" font-weight="500">
+                        <g id="Artboard-1" transform="translate(-5.000000, -56.000000)" fill="#FFFFFF">
+                            <text id="worona">
+                                <tspan x="5" y="92">worona</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </svg>
+              </span>
+            </div>
+            <span class="nav-toggle is-right">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+
+            <div class="nav-right nav-menu">
+              <span class="nav-item">
+                <a class="button is-primary is-active" href="#">
+                  <span class="icon is-small">
+                    <i class="fa fa-th" aria-hidden="true"></i>
+                  </span>
+                  <span>Sites</span>
+                </a>
+              </span>
+              <span class="nav-item">
+                <a class="button is-primary" href="./licenses.html">
+                  <span class="icon is-small">
+                    <i class="fa fa-sliders"></i>
+                  </span>
+                  <span>Licenses</span>
+                </a>
+              </span>
+              <span class="nav-item">
+                <a class="button is-primary" href="./profile.html">
+                  <span class="icon is-small">
+                    <i class="fa fa-user"></i>
+                  </span>
+                  <span>Profile</span>
+                </a>
+              </span>
+              <span class="nav-item">
+                <a class="button is-primary" href="#">
+                  <span class="icon is-small">
+                    <i class="fa fa-power-off"></i>
+                  </span>
+                  <span>Logout</span>
+                </a>
+              </span>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-vcentered">
+            <div class="column">
+              <p class="title">
+                Sites
+              </p>
+              <p class="subtitle">
+                Manage your <strong>WordPress Sites</strong> or add new ones.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <nav class="nav has-shadow">
+      <div class="nav-left">
+        <span class="nav-item">
+          <a class="button is-primary" href="./add-site.html">
+            <span class="icon">
+              <i class="fa fa-plus-circle"></i>
+            </span>
+            <span>Add Site</span>
+          </a>
+        </span>
+      </div>
+    </nav>
+    <section class="section hero is-large">
+      <style media="screen">
+        .spinner {
+          margin: 100px auto 0;
+          width: 70px;
+          text-align: center;
+        }
+
+        .spinner > div {
+          width: 18px;
+          height: 18px;
+          background-color: #1fc8db;
+
+          border-radius: 100%;
+          display: inline-block;
+          -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+          animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+        }
+
+        .spinner .bounce1 {
+          -webkit-animation-delay: -0.32s;
+          animation-delay: -0.32s;
+        }
+
+        .spinner .bounce2 {
+          -webkit-animation-delay: -0.16s;
+          animation-delay: -0.16s;
+        }
+
+        @-webkit-keyframes sk-bouncedelay {
+          0%, 80%, 100% { -webkit-transform: scale(0) }
+          40% { -webkit-transform: scale(1.0) }
+        }
+
+        @keyframes sk-bouncedelay {
+          0%, 80%, 100% {
+            -webkit-transform: scale(0);
+            transform: scale(0);
+          } 40% {
+            -webkit-transform: scale(1.0);
+            transform: scale(1.0);
+          }
+        }
+      </style>
+
+      <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+      </div>
+      <div id="loading-message" class="has-text-centered" style="margin-top:10px;color:#1fc8db;">
+        Connecting
+      </div>
+      <script type="text/javascript">
+        var messages = [
+          'Connecting.','Connecting..','Connecting...','Connected!','Checking loggin',
+          'Checking loggin.','Checking loggin..','Checking loggin...','Login correct!',
+          'Retrieving data','Retrieving data.','Retrieving data..','Retrieving data...',
+          'Data ready!'
+        ];
+
+        var index = 0;
+
+        function nextMessage() {
+          $('#loading-message').text(messages[index])
+          index = (index + 1) % messages.length;
+        }
+
+        window.setInterval(nextMessage, 1200);
+      </script>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Worona Dashboard</strong> by <a href="https://www.worona.org" target="_blank">The Worona Team</a>. The source code is licensed
+            <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT</a>.
+          </p>
+          <p>
+            <a class="icon" href="https://github.com/worona/" target="_blank">
+              <i class="fa fa-github"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
