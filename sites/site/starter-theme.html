@@ -142,12 +142,6 @@
        </div>
     </nav>
     <section class="section">
-      <nav class="is-mobile">
-        <a class="menu-label" href="../sites.html">Sites ></a>
-        <a class="menu-label is-disabled" href="./site.html">Govoid ></a>
-        <a class="menu-label" href="./site.html"><strong>Starter Theme</strong> (General)</a>
-      </nav>
-      <br>
       <div class="columns is-mobile">
         <div class="column is-hidden-mobile is-2-desktop">
           <aside class="menu">
@@ -156,7 +150,7 @@
             </p>
             <ul class="menu-list">
               <li><a href="./site.html">General</a></li>
-              
+
             </ul>
             <p class="menu-label">
               Appereance
@@ -164,11 +158,7 @@
             <ul class="menu-list">
               <li><a href="./change-theme.html">Change theme</a></li>
               <li>
-                <a class="is-disabled" href="#">Starter theme</a>
-                <ul>
-                  <li><a class="is-active" href="#">General</a></li>
-                  <li><a href="./starter-theme-menu.html">Lateral menu</a></li>
-                </ul>
+                <a class="is-active" href="#">Starter theme</a>
               </li>
             </ul>
             <p class="menu-label">
@@ -189,46 +179,74 @@
           </aside>
         </div>
         <div class="column is-12-tablet is-6-desktop">
-          <p class="control">
-            <label class="label">Title</label>
+          <div class="content">
+            <h1>
+              Starter Theme settings
+            </h1>
             <p class="control">
-              <input class="input" type="text" placeholder="Title">
-            </p>
+              <label class="label">Color <small>https://casesandberg.github.io/react-color/</small></label>
+              <p class="control">
+                <a class="button is-medium">
+                  <span class="icon is-small">
+                    <i class="fa fa-paint-brush"></i>
+                  </span>
+                  <span>Change color</span>
+                </a>
+              </p>
+              <style media="screen">
+                input[type="checkbox"] {
+                appearance: none;
+                background-color: #fafafa;
+                border: 1px solid #d3d3d3;
+                border-radius: 26px;
+                box-shadow: inset 0 0 0 1px #d3d3d3;
+                cursor: pointer;
+                height: 28px;
+                position: relative;
+                transition: border .25s .15s, box-shadow .25s .3s, padding .25s;
+                width: 44px;
+                vertical-align: top;
+                }
+                input[type="checkbox"]:after {
+                background-color: #fff;
+                border: 1px solid #d3d3d3;
+                border-radius: 24px;
+                box-shadow: inset 0 -3px 3px rgba(0, 0, 0, 0.025), 0 1px 4px rgba(0, 0, 0, 0.15), 0 4px 4px rgba(0, 0, 0, 0.1);
+                content: '';
+                display: block;
+                height: 24px;
+                left: 0;
+                position: absolute;
+                right: 16px;
+                top: 0;
+                transition: border .25s .15s, left .25s .1s, right .15s .175s;
+                }
+                input[type="checkbox"]:checked {
+                border-color: #53d76a;
+                box-shadow: inset 0 0 0 13px #53d76a;
+                padding-left: 18px;
+                transition: border .25s, box-shadow .25s, padding .25s .15s;
+                }
+                input[type="checkbox"]:checked:after {
+                border-color: #53d76a;
+                left: 16px;
+                right: 0;
+                transition: border .25s, left .15s .25s, right .25s .175s;
+                }
+              </style>
+              <label class="label">Display featured image? <small>http://abpetkov.github.io/switchery/</small></label>
+              <input type="checkbox" checked>
+              <br><br>
 
-            <label class="label">Color</label>
-            <p class="control">
-                <input class="jscolor" value="ab2567">
-            </p>
+              <label class="label">Display categories menu?</label>
+              <input type="checkbox" checked>
+              <br><br><br>
+              <p class="control">
+                <a class="button is-large is-primary">Save</a>
+              </p>
 
-            <label class="label">Featured Image</label>
-            <p class="control">
-              <label class="radio">
-                <input type="radio" name="featured" checked="">
-                Yes
-              </label>
-              <label class="radio">
-                <input type="radio" name="featured">
-                No
-              </label>
             </p>
-
-            <label class="label">Number of preloaded posts</label>
-            <p class="control">
-              <label class="radio">
-                <input type="radio" name="posts">
-                5
-              </label>
-              <label class="radio">
-                <input type="radio" name="posts" checked>
-                10
-              </label>
-              <label class="radio">
-                <input type="radio" name="posts">
-                20
-              </label>
-            </p>
-
-          </p>
+          </div>
         </div>
         <div class="is-hidden-mobile column is-4-desktop is-3-tablet has-text-centered">
           <svg width="355px" height="671px" viewBox="0 0 355 671" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
