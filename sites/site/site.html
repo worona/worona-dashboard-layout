@@ -134,12 +134,6 @@
        </div>
     </nav>
     <section class="section">
-      <nav class="is-mobile">
-        <a class="menu-label" href="../sites.html">Sites ></a>
-        <a class="menu-label is-disabled" href="./site.html">Govoid ></a>
-        <a class="menu-label" href="./site.html"><strong>Settings (General)</strong></a>
-      </nav>
-      <br>
       <div class="columns is-mobile">
         <div class="column is-hidden-mobile is-2-desktop">
           <aside class="menu">
@@ -147,8 +141,7 @@
               Settings
             </p>
             <ul class="menu-list">
-              <li><a class="is-active" href="#">General</a></li>
-              <li><a href="./excludes.html">Excludes</a></li>
+              <li><a class="is-active" href="#">General</a></li>              
             </ul>
             <p class="menu-label">
               Appereance
@@ -177,37 +170,31 @@
         <div class="column is-12-tablet is-6-desktop">
           <div class="content">
             <h3>
-              Categories & tag names
+              General Settings
             </h3>
-            <label class="label">Category name</label>
-            <div class="control is-grouped">
-              <p class="control is-expanded has-icon has-icon-right">
-                <input class="input" type="text" placeholder="category name">
-              </p>
-              <p class="control">
-                <a class="button">
-                  <span class="is-hidden-mobile">Change</span>
-                  <span class="is-hidden-tablet">
-                    <i class="fa fa-wrench"></i>
-                  </span>
-                </a>
-              </p>
-            </div>
+            <p class="control">
+              <label class="label">Title</label>
+              <input class="input is-medium" type="text" placeholder="Title" value="Govoid.es" style="max-width:300px;">
+            </p>
+
+            <label class="label">Number of posts</label>
+            <p class="control">
+              <span class="select is-medium">
+                <select>
+                  <option>5</option>
+                  <option selected="selected">10</option>
+                  <option>15</option>
+                  <option>20</option>
+                  <option>25</option>
+                  <option>30</option>
+                </select>
+              </span>
+            </p>
             <br>
-            <label class="label">Tag name</label>
-            <div class="control is-grouped">
-              <p class="control is-expanded has-icon has-icon-right">
-                <input class="input" type="text" placeholder="tag name">
-              </p>
-              <p class="control">
-                <a class="button">
-                  <span class="is-hidden-mobile">Change</span>
-                  <span class="is-hidden-tablet">
-                    <i class="fa fa-wrench"></i>
-                  </span>
-                </a>
-              </p>
-            </div>
+            <p class="control">
+              <a class="button is-large is-primary">Save</a>
+            </p>
+
           </div>
         </div>
         <div class="is-hidden-mobile column is-4-desktop is-3-tablet has-text-centered">
